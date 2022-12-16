@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Third Party APIs | COMP1073 Client-Side JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="css/normalize.css" rel="stylesheet" />
+	<link href="css/coin.css" rel="stylesheet" />
+	<script src="js/coin.js" defer></script>
+</head>
+
+<body>
+	<h1>Coin Ranking API</h1>
+	<div class="wrapper">
+		<div class="controls">
+			<form>
+				<p>
+					<label for="search">Enter a SINGLE search term (required): </label>
+					<input type="text" id="search" class="search" required>
+				</p>
+				<select name="orderBy" id="orderBy">
+					<option value="price">price</option>
+					<option value="24hVolume">24hVolume</option>
+					<option value="change">change</option>
+					<option value="listedAt">listedAt</option>
+				</select>
+				<p>
+					<button class="submit" type="submit">Search</button>
+				</p>
+			</form>
+		</div>
+		<div class="results">
+			<section>
+			</section>
+		</div>
+	</div>
+</body>
+
+</html>
